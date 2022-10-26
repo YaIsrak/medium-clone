@@ -18,6 +18,10 @@ export interface Post {
 	body: [object];
 }
 
+export interface PostProps {
+	posts: Post;
+}
+
 export interface TypeComment {
 	_id: string;
 	_createdAt: string;
@@ -31,4 +35,8 @@ export interface TypeComment {
 		_ref: string;
 		_type: string;
 	};
+}
+
+export interface CommentProps {
+	comment: TypeComment;
 }

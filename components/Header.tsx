@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Test from './Test';
 
 export default function Header() {
 	return (
@@ -15,9 +16,7 @@ export default function Header() {
 				<div className='hidden md:inline-flex items-center space-x-5'>
 					<h3>About</h3>
 					<h3>Contact</h3>
-					<h3 className='px-4 py-1 bg-green-600 text-white rounded-full'>
-						Follow
-					</h3>
+					<h3 className='px-4 py-1 bg-green-600 text-white rounded-full'>Follow</h3>
 				</div>
 			</div>
 			<div className='flex items-center space-x-5 text-green-600'>
@@ -26,6 +25,7 @@ export default function Header() {
 					Get Started
 				</h3>
 			</div>
+			{/* <Test name={name} /> */}
 		</header>
 	);
 }
